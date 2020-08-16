@@ -1,13 +1,190 @@
-body {
+html,
+body,
+#root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #17223b;
+  color: #ececec;
+  min-width: 300px;
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  padding: 0.5em;
+  background-color: #ff6768;
+  box-sizing: border-box;
+}
+.editor-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.75em;
+  font-weight: 800;
+}
+.editor-title p {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+.editor-resize {
+  padding: 0;
+  margin: 0;
+  width: 2em;
+  height: 2em;
+  background-color: #263859;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #ececec;
+  cursor: pointer;
+}
+.compress {
+  width: 100%;
+  margin: 0;
+  height: 250px;
+}
+.expand {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+}
+.editor {
+  width: 100%;
+  height: 100%;
+  padding: 1em 1.5em;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+}
+.preview {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em;
+}
+h1 {
+  border-bottom: 4px solid #ff6768;
+  color: #ff6768;
+}
+h2 {
+  border-bottom: 2px solid #ececec;
+}
+h3 {
+  border-bottom: 1px solid #ececec;
+}
+img {
+  width: 100%;
+  max-width: 300px;
+}
+a {
+  color: #ff6768;
+}
+blockquote {
+  border-left: 3px solid #ff6768;
+  padding-left: 0.5em;
+  font-style: italic;
+}
+table,
+th,
+td {
+  border: 2px solid #ff6768;
+  border-collapse: collapse;
+  padding: 0.5em;
+}
+code,
+pre {
+  display: inline-block;
+  background-color: #ececec;
+  font-size: 1.1em;
+  color: #ff6768;
+  padding: 2px;
+}
+@media only screen and (min-width: 600px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #17223b;
+    color: #ececec;
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .editor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    padding: 0.75em;
+    width: 90%;
+    margin-top: 2em;
+    background-color: #ff6768;
+    border-radius: 5px 5px 0 0;
+    box-sizing: border-box;
+  }
+  .editor-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0.75em;
+    font-weight: 800;
+  }
+  .editor-title p {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+  }
+  .editor-resize {
+    padding: 0;
+    margin: 0;
+    width: 2em;
+    height: 2em;
+    background-color: #263859;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #ececec;
+    cursor: pointer;
+  }
+  .compress {
+    width: 90%;
+    margin-top: 2em;
+    height: 350px;
+  }
+  .expand {
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+  }
+  .editor {
+    width: 100%;
+    height: 100%;
+    padding: 1em 1.5em;
+    box-sizing: border-box;
+    resize: none;
+    border: none;
+  }
+  .preview {
+    width: 90%;
+  }
 }
