@@ -3,4 +3,4 @@
 
 **Description:** Takes text input and live converts to markdown format. Refactored to React.js.
 
-View the design live on my [website](tjonesdev.github.io/markdown-previewer_react) or [codepen](https://codepen.io/justkeepprogramming/pen/qBbXZVe).
+View the design live on my [website](https://tjonesdev.github.io/markdown-previewer_react) or [codepen](https://codepen.io/justkeepprogramming/pen/qBbXZVe).
