@@ -1,5 +1,5 @@
 # Markdown Previewer
-### Technologies: HTML, CSS, JavaScript, React.js
+### Created: Jun 26, 2020 || Status: Complete || Technologies: HTML, CSS, JavaScript, Babel, React.js
 
 **Description:** Takes text input and live converts to markdown format. Refactored to React.js.
 
